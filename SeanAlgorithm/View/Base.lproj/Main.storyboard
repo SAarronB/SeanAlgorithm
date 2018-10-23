@@ -18,21 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIl-zk-oTt">
-                                <rect key="frame" x="0.0" y="326" width="375" height="341"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIl-zk-oTt">
+                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WeF-gC-VlM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WeF-gC-VlM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="328"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WeF-gC-VlM" secondAttribute="bottom" constant="339" id="0LM-pa-tJ2"/>
+                            <constraint firstItem="WeF-gC-VlM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4tg-9N-acu"/>
+                            <constraint firstItem="FIl-zk-oTt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6Hj-a3-fgt"/>
+                            <constraint firstItem="WeF-gC-VlM" firstAttribute="leading" secondItem="FIl-zk-oTt" secondAttribute="leading" id="ECQ-mr-ZTP"/>
+                            <constraint firstAttribute="trailing" secondItem="WeF-gC-VlM" secondAttribute="trailing" id="X8G-9D-Iot"/>
+                            <constraint firstItem="WeF-gC-VlM" firstAttribute="trailing" secondItem="FIl-zk-oTt" secondAttribute="trailing" id="c4V-Dy-z8g"/>
+                            <constraint firstItem="FIl-zk-oTt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="izC-9T-yKt"/>
+                            <constraint firstItem="WeF-gC-VlM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ldL-uj-NBC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="algorithmText" destination="FIl-zk-oTt" id="7Vk-aq-trt"/>
+                        <outlet property="swiftImage" destination="WeF-gC-VlM" id="gM9-dq-2S6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
